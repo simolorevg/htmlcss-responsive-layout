@@ -178,6 +178,13 @@ img{
     /*DEBUG*/
     background-color: grey;
 }
+/*CALL TO ACTION*/
+.calltoaction{
+    background-color: #9792e4;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
 /*FOOTER*/
 /*MEDIAQUERY*/
 @media screen and (min-width: 768px) {
@@ -240,7 +247,6 @@ img{
    }
    .aboutus-paragraph{
     width: 60%;
-    height: 40vh;
    }
    .aboutus-card{
     width: 30%;
@@ -312,5 +318,9 @@ img{
     .benefit-col:nth-child(3n+2){
         margin-left: 20px;
         margin-right: 20px;
+    }
+    /*CALL TO ACTION*/
+    .calltoaction .container{
+        width: 60%;
     }
 }
