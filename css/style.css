@@ -12,6 +12,10 @@ a{
     text-decoration: none;
     color: inherit;
 }
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
 /*FLEXBOX*/
 .flex{
     display: flex;
@@ -20,6 +24,10 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+/*MARGIN*/
+.margin-bottom5 {
+    margin-bottom: 5vh;
 }
 /*HEADER*/
 .header-nav{
@@ -40,13 +48,45 @@ a{
     display: none;
 }
 /*MAIN*/
+/*SETTING*/
+.setting{
+    margin-top: 15vh;
+}
+.row{
+    width: 100%;
+}
+.col{
+    width: 100%;
+    background-color: #65b4fa;
+    border-radius: 10px;
+    padding: 10px;
+    /*debug*/
+    border: 1px solid black;
+}
+
 /*FOOTER*/
 /*MEDIAQUERY*/
-@media screen and (min-width: 992px) {
-    .container{
-        width: 80%;
-        margin: 0 auto;
+@media screen and (min-width: 768px) {
+   /*MAIN*/
+   /*SETTINGS*/
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 50vh;
     }
+    .col{
+        width: calc(30% - 20px);
+        margin-bottom: 0;
+        margin: 0 10px;
+    }
+    .large{
+        width: calc(70% - 20px);
+    }
+    .rowtwo{
+        width: calc(100% / 3 - 20px);
+    }
+}
+@media screen and (min-width: 992px) {
     .menu-button{
         display: none;
     }
