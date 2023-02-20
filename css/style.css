@@ -79,6 +79,19 @@ a{
 .rowtwo .col{
     margin: 10px 0;
 }
+/*SETTING COLUMN*/
+.paragraph{
+    width: 100%;
+    height: 50%;
+    /*debug*/
+    background-color: brown;
+}
+.setting-img{
+    width: 100%;
+    height: 50%;
+    /*debug*/
+    background-color: yellow;
+}
 /*FOOTER*/
 /*MEDIAQUERY*/
 @media screen and (min-width: 768px) {
@@ -100,8 +113,16 @@ a{
    .large{
     flex-grow: 1;
    }
+   /*SETTINGS COLUMNS WITHOUT CLASS LARGE*/
+   div .col:not(.large) .setting-img{
+    height: 30%;
+   }
+   div .col:not(.large) .paragraph{
+    height: 70%;
+   }
 }
 @media screen and (min-width: 992px) {
+   /*HEADER*/
     .menu-button{
         display: none;
     }
@@ -109,4 +130,23 @@ a{
         display: flex;
         gap: 10px;
     }
+    /*MAIN*/
+    /*SETTINGS*/
+    .row .large{
+        display: flex;
+        align-content: stretch;
+    }
+    .large .paragraph{
+        height: 100%;
+    }
+    .large .setting-img{
+        height: 100%;
+    }
+    /*SETTINGS COLUMN WITHOUT CLASS LARGE*/
+    div .col:not(.large) .setting-img{
+        height: 50%;
+       }
+       div .col:not(.large) .paragraph{
+        height: 50%;
+       }
 }
