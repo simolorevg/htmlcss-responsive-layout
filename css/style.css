@@ -186,6 +186,12 @@ img{
     text-align: center;
 }
 /*FOOTER*/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 /*MEDIAQUERY*/
 @media screen and (min-width: 768px) {
    /*MAIN*/
@@ -321,6 +327,10 @@ img{
     }
     /*CALL TO ACTION*/
     .calltoaction .container{
+        width: 60%;
+    }
+    /*FOOTER*/
+    footer .container{
         width: 60%;
     }
 }
