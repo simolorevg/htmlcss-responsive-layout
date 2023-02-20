@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 /*COMMON*/
-body{
-    color: white;
-}
 a{
     text-decoration: none;
     color: inherit;
@@ -16,9 +13,18 @@ a{
     width: 80%;
     margin: 0 auto;
 }
+img{
+    max-width: 100%;
+}
 /*FLEXBOX*/
 .flex{
     display: flex;
+}
+.flexcolcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .flexspacebwcenter{
     display: flex;
@@ -34,6 +40,12 @@ a{
 }
 .margin-bottom10 {
     margin-bottom: 10px;
+}
+.margin-bottom30{
+    margin-bottom: 30px;
+}
+.margin-bottom50{
+    margin-bottom: 50px;
 }
 /*HEADER*/
 .header-nav{
@@ -95,7 +107,7 @@ a{
     /*debug*/
     background-color: yellow;
 }
-/*STRATEGIC PLANNING SECTION*/
+/*STRATEGIC PLANNING*/
 .strategic-planning{
     background-color: #9792e4;
 }
@@ -122,6 +134,41 @@ a{
     background-color: white;
     color: black;
     border-radius: 10px;
+}
+/*TESTIMONIAL*/
+.testimonial-card{
+    background-color: #9792e4;
+    width: 100%;
+    height: 40vh;
+    padding: 20px;
+}
+.testimonial-img{
+    width: 50%;
+    height: 40%;
+    border-radius: 50%;
+    /*DEBUG*/
+    background-color: orange;
+}
+.testimonial-paragraph{
+    width:100%;
+    height: 60%;
+    /*DEBUG*/
+    background-color: green;
+}
+/*BENEFITS*/
+.benefits h2{
+    text-align: center;
+}
+.benefits-row{
+    height: 40vh;
+}
+.benefit-col{
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    /*DEBUG*/
+    background-color: deeppink;
+    border: 1px solid black;
 }
 /*FOOTER*/
 /*MEDIAQUERY*/
@@ -150,6 +197,33 @@ a{
    }
    div .col:not(.large) .paragraph{
     height: 70%;
+   }
+   /*TESTIMONIAL SECTION*/
+   .testimonial-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+   }
+   .testimonial-img{
+    width: 30%;
+    height: 50%;
+   }
+   .testimonial-paragraph{
+    height: 40%;
+    width: 60%;
+   }
+   /*BENEFITS SECTION*/
+   .benefits-row{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .benefit-col{
+    width: calc(100% / 2 - 20px);
+   }
+   .benefit-col:nth-child(odd){
+    margin-right: 20px;
    }
 }
 @media screen and (min-width: 992px) {
@@ -187,9 +261,35 @@ a{
     }
     .strategic-card .card{
         width: 50%;
+        margin-bottom: 0;
     }
     .second{
         height: 350px;
         align-self: flex-end;
+    }
+    /*TESTIMONIAL SECTION*/
+    .testimonial-card{
+        gap: 20px;
+    }
+    .testimonial-img{
+        height: 60%;
+    }
+    .testimonial-paragraph{
+        height: 50%;
+    }
+    /*BENEFITS*/
+    .benefits-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .benefit-col{
+        width: calc(100% / 3 - 20px);
+    }
+    .benefit-col:nth-child(odd){
+        margin-right: 0;
+    }
+    .benefit-col:nth-child(3n+2){
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
