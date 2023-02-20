@@ -160,7 +160,7 @@ img{
     text-align: center;
 }
 .benefits-row{
-    height: 40vh;
+    height: 30vh;
 }
 .benefit-col{
     width: 100%;
@@ -169,6 +169,10 @@ img{
     /*DEBUG*/
     background-color: deeppink;
     border: 1px solid black;
+}
+/*ABOUT US*/
+.aboutus{
+    margin-bottom: 1000px;
 }
 /*FOOTER*/
 /*MEDIAQUERY*/
