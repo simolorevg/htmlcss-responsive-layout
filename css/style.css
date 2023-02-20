@@ -26,14 +26,18 @@ a{
     justify-content: space-between;
 }
 /*MARGIN*/
-.margin-bottom5 {
-    margin-bottom: 5vh;
+.margin-top20{
+    margin-top: 20px;
+}
+.margin-bottom10 {
+    margin-bottom: 10px;
 }
 /*HEADER*/
 .header-nav{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
     padding: 0 1rem; 
     background-color: #0084fd;
     width: 100%;
@@ -54,37 +58,48 @@ a{
 }
 .row{
     width: 100%;
+    height: 40vh;
 }
 .col{
     width: 100%;
+    height: 40%;
     background-color: #65b4fa;
     border-radius: 10px;
     padding: 10px;
     /*debug*/
     border: 1px solid black;
 }
-
+.large{
+    height: 60%;
+}
+.rowtwo{
+    width: 100%;
+    height: 40vh; 
+}
+.rowtwo .col{
+    margin: 10px 0;
+}
 /*FOOTER*/
 /*MEDIAQUERY*/
 @media screen and (min-width: 768px) {
    /*MAIN*/
    /*SETTINGS*/
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        min-height: 50vh;
-    }
-    .col{
-        width: calc(30% - 20px);
-        margin-bottom: 0;
-        margin: 0 10px;
-    }
-    .large{
-        width: calc(70% - 20px);
-    }
-    .rowtwo{
-        width: calc(100% / 3 - 20px);
-    }
+   .row,
+   .rowtwo{
+    display: flex;
+    justify-content: space-between;
+   }
+   .row .col,
+   .rowtwo .col{
+    height: 100%;
+    margin-left: 10px;
+   }
+   .row .col{
+    width: calc(33% - 10px);
+   }
+   .large{
+    flex-grow: 1;
+   }
 }
 @media screen and (min-width: 992px) {
     .menu-button{
