@@ -252,7 +252,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
    }
-   .row .col .setting-img,
+   .row .col:not(.large) .setting-img,
    .rowtwo .col .setting-img{
     height: 30%;
    }
@@ -345,6 +345,10 @@ footer{
     .large .setting-img{
         width: 50%;
         height: 100%;
+        display: flex;
+    }
+    .large .setting-img img{
+        justify-content: flex-end;
     }
     /*SETTINGS COLUMN WITHOUT CLASS LARGE*/
     .setting .col:not(.large) .setting-img{
