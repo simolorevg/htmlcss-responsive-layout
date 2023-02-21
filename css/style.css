@@ -30,15 +30,27 @@ img{
 .purple-text{
     color: purple;
 }
+.text-center{
+    text-align: center;
+}
 /*BUTTON*/
 .button{
     padding: 0.5rem 1rem;
-    border-radius: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.small{
+    padding: 0.5rem 0.5rem;
+    width: 50%;
 }
 /*BUTTON COLORS*/
 .first{
     background-color: white;
     color: black;
+}
+.purple-button{
+    background-color: purple;
+    color: white;
 }
 /*FLEXBOX*/
 .flex{
@@ -199,17 +211,17 @@ img{
 /*BENEFITS*/
 .benefits{
     background-color: #9792e4;
+    padding: 10px;
 }
-.benefits h2{
-    text-align: center;
+.benefit-col h2{
+    font-size: 2.5em;
 }
 .benefit-col{
     width: 100%;
-    height: 30vh;
     margin: 20px 0;
     border-radius: 10px;
-    /*DEBUG*/
-    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
 }
 /*ABOUT US*/
 .aboutus h2{
