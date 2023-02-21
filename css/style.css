@@ -222,6 +222,23 @@ img{
 /*ABOUT US*/
 .aboutus h2{
     color: purple;
+    font-size: 2.5em;
+}
+.aboutus-card{
+    max-width: 200px;
+}
+.aboutus-card .card-img{
+    position: relative;
+}
+.card-img i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 4em;
+    color: purple;
+}
+.about-slogan{
+    font-size: 1em;
 }
 /*CALL TO ACTION*/
 .calltoaction{
@@ -319,11 +336,17 @@ footer{
     display: flex;
     justify-content: space-between;
    }
+   .aboutus .container{
+    width: 60%;
+   }
    .aboutus-paragraph{
     width: 60%;
    }
    .aboutus-card{
     width: 30%;
+   }
+   .about-slogan{
+    font-size: 1.2em;
    }
 }
 @media screen and (min-width: 992px) {
@@ -400,6 +423,16 @@ footer{
     .benefit-col:nth-child(3n+2){
         margin-left: 20px;
         margin-right: 20px;
+    }
+    /*ABOUT US SECTION*/
+    .aboutus .container{
+        max-width: 1000px;
+    }
+    .aboutus-paragraph{
+        font-size: 1.3em;
+    }
+    .about-slogan{
+        font-size: 1.6em;
     }
     /*CALL TO ACTION*/
     .calltoaction .container{
