@@ -41,6 +41,10 @@ img{
 .flex{
     display: flex;
 }
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
 .flexcolcenter{
     display: flex;
     flex-direction: column;
@@ -150,22 +154,13 @@ img{
 }
 .card{
     width: 100%;
-    height: 50vh;
     padding: 20px;
-    /*DEBUG*/
-    border: 1px solid black;
 }
 .card-img{
     width: 100%;
-    height: 50%;
-    /*DEBUG*/
-    background-color: crimson;
 }
 .card-paragraph{
     width: 100%;
-    height: 50%;
-    /*DEBUG*/
-    background-color: black;
 }
 .white{
     background-color: white;
@@ -369,7 +364,7 @@ footer{
         width: 50%;
         margin-bottom: 0;
     }
-    .second{
+    .other-card{
         height: 350px;
         align-self: flex-end;
     }
