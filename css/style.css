@@ -57,6 +57,10 @@ img{
     background-color: purple;
     color: white;
 }
+.white-button{
+    background-color: white;
+    color: purple;
+}
 /*FLEXBOX*/
 .flex{
     display: flex;
@@ -81,6 +85,9 @@ img{
     justify-content: center;
 }
 /*MARGIN*/
+.margin-top-bottom20{
+    margin: 20px 0;
+}
 .margin-top20{
     margin-top: 20px;
 }
@@ -97,6 +104,10 @@ img{
     margin-bottom: 50px;
 }
 .margin-right10{
+    margin-right: 10px;
+}
+.margin-left-right10{
+    margin-left: 10px;
     margin-right: 10px;
 }
 /*HEADER*/
@@ -247,6 +258,16 @@ img{
     padding: 10px;
     text-align: center;
 }
+.calltoaction h2{
+    font-size: 2.5em;
+    color: gold;
+}
+.underline{
+    text-decoration: underline;
+}
+.calltoaction i{
+    font-size: 0.5em;
+}
 /*FOOTER*/
 footer{
     background-color: black;
@@ -348,6 +369,16 @@ footer{
    .about-slogan{
     font-size: 1.2em;
    }
+   /*CALL TO ACTION*/
+   .calltoaction h2{
+    font-size: 3.5em;
+   }
+   .calltoaction h3{
+    font-size: 1.9em;
+   }
+   .calltoaction .container{
+    width: 60%;
+   }
 }
 @media screen and (min-width: 992px) {
    /*HEADER*/
@@ -436,10 +467,10 @@ footer{
     }
     /*CALL TO ACTION*/
     .calltoaction .container{
-        width: 60%;
+        width: 40%;
     }
     /*FOOTER*/
     footer .container{
-        width: 60%;
+        width: 40%;
     }
 }
