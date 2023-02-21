@@ -357,16 +357,15 @@ footer{
     }
     /*STRATEGIC PLANNING*/
     .strategic-card{
-        display: flex;
         width: 60%;
+        display: flex;
+        flex-direction: row;
     }
     .strategic-card .card{
-        width: 50%;
-        margin-bottom: 0;
+        width: 50%;  
     }
-    .other-card{
-        height: 350px;
-        align-self: flex-end;
+    .other-card img{
+        height: 240px;
     }
     /*TESTIMONIAL SECTION*/
     .testimonial-card{
